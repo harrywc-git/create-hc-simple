@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun run build && bun run serve",
+    "build": "rm -rf build && bun build ./src/index.tsx --outdir ./build --minify && bun run tailwindcss -i ./src/index.css -o ./build/output.css && cp public/index.html build/index.html",
+    "serve": "bunx serve ./build"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.10"
+  }
+}

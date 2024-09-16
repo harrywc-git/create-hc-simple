@@ -1,0 +1,12 @@
+{
+  "name": "create-hc-simple",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "hc-simple": "index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
